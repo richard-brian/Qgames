@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background: black;
+}
+
+.opacidade {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    display: block;
+}
+
+
+.img-fundo {
+    object-fit: cover;
+    object-position: center;
+}
+
+.links {
+    color: aqua;
+}
+.links:hover{
+    color: blue;
+    transition: 0.3s;
+}
+
+.fundo-card-header {
+    background-color: black !important;
+}
+
+.google-gradient-icon {
+    background: linear-gradient(45deg, #4285F4, #EA4335, #FBBC05, #34A853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.button-google:hover{
+    
+    color: #EA4335 !important;
+    transition: 0.2s !important;
+}
+.button-facebook:hover{
+    color: #4285F4 !important;
+    transition: 0.2s !important;
+}
+.btn-custom-hover:hover {
+        background-color: #cedbe9 !important;
+        border-color: #8b9bac !important;
+}
+.btn-custom-hover {
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+}

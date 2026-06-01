@@ -1,0 +1,346 @@
+body{
+  background-image: url('caminho/para/sua/imagem-hd.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #1a1a1a;}
+
+.QG{
+    height: 40px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #00d9ff;
+}
+
+.navbar-brand{
+    color: #AA3A18 !important;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-right: 35px;
+}
+
+.nav-link{
+    margin-right: 50px;
+    color: #AA3A18 !important;
+    font-weight: 700;
+}
+
+.navbar-toggler{
+    color: #AA3A18 !important;
+    background-color: #AA3A18 !important;
+}
+
+.d-flex{
+    font-weight: 700;
+    color: #AA3A18 !important;
+}
+
+a.btn{
+    font-weight: 700;
+    color: #AA3A18 !important;
+    border-color: transparent !important;
+    border: solid 2px #AA3A18 !important;
+    transition: 0.3s;
+}
+
+a.btn:hover{
+    background-color: #AA3A18 !important;
+    color: #fff !important;
+    border: solid 2px #ffffff !important;
+}
+
+.imagem-fundo {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+/* ======================================== */
+/* MAIN */
+/* ======================================== */
+
+.feedback-main{
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+/* ======================================== */
+/* CARD */
+/* ======================================== */
+
+.quiz-box{
+    width: 100%;
+    max-width: 750px;
+
+    background-color: black;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* ======================================== */
+/* TÍTULO */
+/* ======================================== */
+
+.quiz-box h1{
+    color: white;
+
+    font-size: 55px;
+
+    margin-bottom: 40px;
+}
+
+/* ======================================== */
+/* AVALIAÇÃO */
+/* ======================================== */
+
+.avaliacao-box{
+    width: 100%;
+
+    background-color: #2d2d2d;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.avaliacao-box label{
+    color: white;
+
+    font-size: 25px;
+}
+
+.avaliacao-box select{
+    width: 120px;
+    height: 50px;
+
+    background-color: #8f8787;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    outline: none;
+}
+
+/* ======================================== */
+/* TEXTAREA */
+/* ======================================== */
+
+.comentario-box textarea{
+    width: 100%;
+    height: 280px;
+
+    background-color: #2d2d2d;
+
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    color: white;
+
+    font-size: 20px;
+
+    resize: none;
+
+    outline: none;
+
+    margin-bottom: 30px;
+}
+
+.comentario-box textarea::placeholder{
+    color: #c2c2c2;
+}
+
+/* ======================================== */
+/* PUBLICAR */
+/* ======================================== */
+
+.publicar-box{
+    margin-bottom: 35px;
+}
+
+.publicar-box label{
+    color: white;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.publicar-box input{
+    width: 18px;
+    height: 18px;
+}
+
+/* ======================================== */
+/* BOTÃO */
+/* ======================================== */
+
+.btn-enviar{
+    width: 100%;
+    height: 65px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background-color: #8f8787;
+
+    color: white;
+
+    font-size: 25px;
+
+    transition: 0.3s;
+}
+
+.btn-enviar:hover{
+    background-color: #b4acac;
+
+    transform: scale(1.01);
+}
+
+/* ======================================== */
+/* FOOTER */
+/* ======================================== */
+
+.logo{
+    height: 50px;
+}
+
+.rodape{
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.camp-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos{
+    font-weight: 700px;
+    display: flex;
+    padding-right: 40px;
+    color: #ffffff;
+
+}
+
+.company{
+    padding-right: 80px;
+    padding-left: 30px;
+}
+
+.link-info{
+    color: #00d9ff;
+    transition: 0.3s;
+}
+
+.link-info:hover{
+    color: #ffffff !important;
+}
+
+@media(max-width: 768px){
+
+    .quiz-box{
+        padding: 30px;
+    }
+
+    .quiz-box h1{
+        font-size: 40px;
+    }
+
+    .avaliacao-box{
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .avaliacao-box label{
+        font-size: 22px;
+    }
+
+    .comentario-box textarea{
+        height: 220px;
+    }
+
+    .infos{
+        gap: 50px;
+    }
+
+}
+
+@media(max-width: 576px){
+
+    .QG{
+        width: 55px;
+        height: 55px;
+    }
+
+    .quiz-box h1{
+        font-size: 32px;
+    }
+
+    .btn-enviar{
+        font-size: 22px;
+    }
+
+    .infos{
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+}
