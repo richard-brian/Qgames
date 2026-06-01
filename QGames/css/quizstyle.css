@@ -323,6 +323,58 @@ a.btn-newquiz:hover{
     z-index: 1;
     color: #ffffff;
 }
+/************Form de Orçamento*****/
+.botao-orcamento {
+    border: 0px;
+    border-radius: 4px;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-size: 1.2em;
+    font-family: Baloo;
+    
+}
+.botao-orcamento:hover{
+    background-color: #2e3133;
+}
+
+.form-container {
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.custom-range::-webkit-slider-runnable-track {
+    background: #e9ecef;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: #0d6efd;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+}
+
+.custom-range::-webkit-slider-thumb:hover {
+    background: #0b5ed7;
+}
+
+
+.price-display {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+.form-color{
+    border: solid 1px #000000;
+}
 
 
 
