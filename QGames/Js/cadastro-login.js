@@ -1,5 +1,4 @@
-
-        document.getElementById('form-cadastro').addEventListener('submit', function(event) {
+    document.getElementById('form-cadastro').addEventListener('submit', function(event) {
             // Evita que a página recarregue ao apertar Enter
             event.preventDefault();
 
@@ -9,6 +8,7 @@
             
             console.log('Enter pressionado! Formulário validado para:', email);
 
+            window.location.href = "paginaQuiz.html";
             // AQUI VOCÊ COLOCA O CÓDIGO DA PRÓXIMA ETAPA
             // Exemplo: window.location.href = "proxima-etapa.html";
             // Ou chamar uma função que esconde este card e mostra outro.
