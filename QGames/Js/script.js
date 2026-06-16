@@ -10,7 +10,7 @@ opcoes.forEach(opcao => {
 
             marcadas.push(opcao);
 
-            if (marcadas.length > 3) {
+            if (marcadas.length > 5) {
 
                 let primeira = marcadas.shift();
 
