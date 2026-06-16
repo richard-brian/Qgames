@@ -16,15 +16,16 @@ main {
 }
 
 .opacidade {
-    opacity: 0.5;
-    transition: opacity 0.3s;
-    display: block;
+    opacity: 0.5 !important;
+    transition: opacity 0.3s !important;
+    display: block !important;
 }
 
 
 .img-fundo {
-    object-fit: cover;
-    object-position: center;
+    object-fit: cover !important;
+    object-position: center !important;
+    opacity: 0.5 !important;
 }
 
 .links {
