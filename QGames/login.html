@@ -26,24 +26,26 @@
                     </div>
 
                     <div class="card-body">
-
-                        <div class="mb-3">
-                            <p class="py-0 my-0 text-start" style="font-size: 0.8em;">E-mail ou Usuário</p>
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">august123@gmail.com</label>
+                        <form id="form-login">
+                            <div class="mb-3">
+                                <p class="py-0 my-0 text-start" style="font-size: 0.8em;">E-mail</p>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                        required>
+                                    <label for="email">august123@gmail.com</label>
+                                </div>
                             </div>
-                        </div>
-
-                        <div>
-                            <p class="py-0 my-0 text-start" style="font-size: 0.8em;">Senha</p>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword"
-                                    placeholder="Password">
-                                <label for="floatingPassword">XXXXXXXX</label>
+                            <div class="mb-3">
+                                <p class="py-0 my-0 text-start" style="font-size: 0.8em;">Senha</p>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password" required>
+                                    <label for="floatingPassword">XXXXXXXX</label>
+                                </div>
                             </div>
-                        </div>
+
+                            <button type="submit" class="d-none"></button>
+                        </form>
                         <div>
                             <a href="#" class="links">Esqueci a senha</a>
                         </div>
@@ -53,7 +55,7 @@
                         <hr>
                         <div class="d-grid gap-2 container">
                             <div>
-                                <a href="#"
+                                <a href="paginaQuiz.html"
                                     class="btn btn-light btn-custom-hover bg-white border d-flex align-items-center justify-content-start py-2 my-2 text-dark text-decoration-none ps-5 ">
                                     <i class="bi bi-google google-gradient-icon me-3"></i>
                                     <span>Fazer login com o Google</span>
@@ -61,7 +63,7 @@
                             </div>
 
                             <div>
-                                <a href="#"
+                                <a href="paginaQuiz.html"
                                     class="btn btn-light btn-custom-hover bg-white border d-flex align-items-center justify-content-start py-2 text-dark text-decoration-none ps-5 ">
                                     <i class="bi bi-facebook text-primary me-3"></i>
                                     <span>Fazer login com o Facebook</span>
@@ -78,6 +80,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="Js/cadastro-login.js"></script>
 </body>
 
 </html>

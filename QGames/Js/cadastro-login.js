@@ -1,15 +1,32 @@
-    document.getElementById('form-cadastro').addEventListener('submit', function(event) {
-            // Evita que a página recarregue ao apertar Enter
-            event.preventDefault();
 
-            // Pegando os valores preenchidos (opcional, para validação)
-            const email = document.getElementById('email').value;
-            const user = document.getElementById('username').value;
-            
-            console.log('Enter pressionado! Formulário validado para:', email);
+const formCadastro = document.getElementById('form-cadastro');
 
-            window.location.href = "paginaQuiz.html";
-            // AQUI VOCÊ COLOCA O CÓDIGO DA PRÓXIMA ETAPA
-            // Exemplo: window.location.href = "proxima-etapa.html";
-            // Ou chamar uma função que esconde este card e mostra outro.
-        });
+
+if (formCadastro) {
+    formCadastro.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        console.log('Enter pressionado no Cadastro!');
+        window.location.href = "paginaQuiz.html"
+        
+    });
+}
+
+
+
+const formLogin = document.getElementById('form-login');
+
+
+if (formLogin) {
+    formLogin.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        
+        const emailLogin = document.getElementById('email').value;
+        const senhaLogin = document.getElementById('floatingPassword').value;
+        
+        console.log('Enter pressionado no Login! Tentando conectar com:', emailLogin);
+        
+        window.location.href = "paginaQuiz.html"
+    });
+}
