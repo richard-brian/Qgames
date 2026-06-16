@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to right,rgb(51, 3, 97), rgb(64, 1, 83));
-    margin: 0;
+    margin: 20px;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 1rem;
+    border: 10px solid #fff;
+    border-radius: 20px;
 }
 
 ul{
