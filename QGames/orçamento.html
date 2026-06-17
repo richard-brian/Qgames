@@ -85,7 +85,7 @@
                                         </label>
 
                                         <input type="range" class="form-range custom-range" id="rangePreco" min="50"
-                                            max="700" step="1" value="375" oninput="atualizarValor(this.value)">
+                                            max="700" step="1" value="375">
 
                                         <div class="d-flex justify-content-between text-muted small mt-2">
                                             <span>R$ 50</span>
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+                                    <button type="submit" id="orcamento-salvo" class="btn btn-primary w-100 py-2 fw-semibold">
                                         Aplicar filtro
                                     </button>
                                 </form>
@@ -141,10 +141,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        function atualizarValor(val) {
-            document.getElementById('valorAtual').innerText = val;
-        }
+    <script src="Js/orcamento.js">
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
