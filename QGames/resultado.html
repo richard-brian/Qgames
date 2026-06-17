@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/quizstyle.css">
     <link rel="stylesheet" href="css/biblioteca.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>QGames-quiz</title>
 </head>
 
@@ -52,7 +53,7 @@
     <main>
         <div class="elemento-animado">
             <div id="resultado" class="container d-flex flex-column align-items-center justify-content-center my-3">
-                
+
                 <div class="card bg-dark text-white form-color mx-auto" style="max-width: 540px;">
                     <div class="row g-0 align-items-start p-3">
                         <div class="col-md-4">
@@ -63,7 +64,8 @@
                                 <h5 class="card-title">God of War: Ragnarok</h5>
                                 <p class="card-text" style="font-size: 0.9em;">
                                     God of War: Ragnarök continua a jornada de Kratos e seu filho, Atreus,
-                                    enquanto o inverno do Fimbulwinter assola os Nove Reinos. Com a ameaça do Ragnarök o fim cada vez mais se aproxima, os dois precisam decidir entre se
+                                    enquanto o inverno do Fimbulwinter assola os Nove Reinos. Com a ameaça do Ragnarök o
+                                    fim cada vez mais se aproxima, os dois precisam decidir entre se
                                     esconder do destino ou enfrentá-lo.
                                 </p>
                             </div>
@@ -72,60 +74,26 @@
                     <div class="border-top border-secondary p-3">
                         <ul class="list-group list-group-flush rounded">
                             <li class="list-group-item bg-dark text-white-50 border-secondary">Duração: 20-60 horas</li>
-                            <li class="list-group-item bg-dark text-white-50 border-secondary">Preço: PS:R$349,90 PC:R$305-355</li>
-                            <li class="list-group-item bg-dark text-white-50 border-secondary">Disponível:PS4, PS5, Steam, Epic Games Store</li>
+                            <li class="list-group-item bg-dark text-white-50 border-secondary" id="preco"></li>
+                            <li class="list-group-item bg-dark text-white-50 border-secondary">Disponível:PS4, PS5,
+                                Steam, Epic Games Store</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="criar-quiz ">
+                <a type="button" href="resultado2.html" class="btn-newquiz btn-outline-primary"
+                    href="resultado2.html">Ver outras opções</a>
+            </div>
         </div>
     </main>
-
-    <footer>
-        <div class="rodape">
-            <div class="camp-log">
-                <img class="logo" src="img/logo.jpeg" alt="">
-            </div>
-            <br>
-            <div class="infos">
-                <div class="company">
-                    <h5>COMPANY</h5>
-                    <ul class="outros1">
-                        <li class="sobrenos">
-                            <a href="#" class="link-info">Sobre nós</a>
-                        </li>
-                        <li class="sobrenos">
-                            <a href="#" class="link-info">Garanta cupons</a>
-                        </li>
-                        <li class="sobrenos">
-                            <a href="#" class="link-info">Info link</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="legal">
-                    <h5>LEGAL</h5>
-                    <ul class="outros2">
-                        <li class="sobrenos">
-                            <a href="#" class="link-info">Politicas de Privacidade</a>
-                        </li>
-                        <li class="sobrenos">
-                            <a href="#" class="link-info">Politicas de Cookies</a>
-                        </li>
-                        <li class="sobrenos">
-                            <a href="feedback.html" class="link-info">Feedback</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script src="Js/orcamento.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script src="Js/cadastro-login.js" defer></script>
+    <script src="Js/cadastro-login.js" defer></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ if (formLogin) {
         
         console.log('Pressione enter para continuar', emailLogin);
 
-        window.location.href = "paginaQuiz.html"
+        window.location.href = "./paginaQuiz.html"
     });
 }
 
