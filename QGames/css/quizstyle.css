@@ -376,7 +376,7 @@ a.btn-newquiz:hover{
 .form-color{
     border: solid 1px #000000;
 }
-.btn{
+.bbtn{
     font-weight: 700;
     color: #AA3A18 !important;
     border-color: transparent !important;
@@ -385,7 +385,7 @@ a.btn-newquiz:hover{
     font-size: 1.5rem;
 }
 
-.btn:hover{
+.bbtn:hover{
     background-color: #AA3A18 !important;
     color: #fff !important;
     border: solid 2px #ffffff !important;
