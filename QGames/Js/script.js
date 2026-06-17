@@ -1,5 +1,5 @@
 const opcoes = document.querySelectorAll(".opcao");
-
+const button = document.getElementById('quizComplete');
 let marcadas = [];
 
 opcoes.forEach(opcao => {
@@ -15,7 +15,14 @@ opcoes.forEach(opcao => {
                 let primeira = marcadas.shift();
 
                 primeira.checked = false;
+
             }
+            if (marcadas.length >= 5){
+                button.addEventListener("click", function(){
+                    window.location.href = "resultado.html"
+                });
+            }
+
 
         } else {
 

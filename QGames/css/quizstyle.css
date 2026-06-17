@@ -376,6 +376,21 @@ a.btn-newquiz:hover{
 .form-color{
     border: solid 1px #000000;
 }
+.btn{
+    font-weight: 700;
+    color: #AA3A18 !important;
+    border-color: transparent !important;
+    border: solid 2px #AA3A18 !important;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #AA3A18 !important;
+    color: #fff !important;
+    border: solid 2px #ffffff !important;
+}
+
 /******Resultado*****************/
 @keyframes surgir {
             from{

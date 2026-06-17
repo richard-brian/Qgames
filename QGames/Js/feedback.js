@@ -14,7 +14,7 @@ botao.addEventListener("click", function(){
 
     let valorNota = nota.value;
 
-    // VERIFICA CAMPO VAZIO
+    
 
     if(textoComentario.trim() === ""){
 
@@ -23,17 +23,17 @@ botao.addEventListener("click", function(){
         return;
     }
 
-    // VERIFICA CHECKBOX
+    
 
     if(publicar.checked){
 
-        // CRIA CARD
+        
 
         const card = document.createElement("div");
 
         card.classList.add("comentario-card");
 
-        // CONTEÚDO
+        
 
         card.innerHTML = `
 
@@ -51,13 +51,13 @@ botao.addEventListener("click", function(){
 
         `;
 
-        // ADICIONA NO TOPO
+        
 
         lista.prepend(card);
 
     }
 
-    // LIMPA CAMPOS
+    
 
     comentario.value = "";
 
