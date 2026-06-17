@@ -31,19 +31,26 @@ if (formLogin) {
 }
 
 
-
-
-// Recupera o valor salvo no localStorage
 const usuario = localStorage.getItem('nomeUsuario');
 
-// Seleciona a div
-const perfilusername = document.getElementById('perfil-username');
 
-// Se o usuário existir, insere no HTML
-if (usuario) {
-    perfilusername.innerHTML += `<h1>${usuario}</h1>`;
-    
+const perfilusername = document.getElementById('perfil-username');
+const result = document.getElementById('resultado');
+
+if (perfilusername) {  
+    perfilusername.innerHTML += `
+    <h1><i class="bi bi-person-circle"
+    style="font-size: 3rem; color: blue; margin-right: 5px;"></i>${usuario} </h1>
+    <span style="font-size: 1rem; color: rgb(121, 121, 121);">Usuário há 2 meses | Há 1 listas criadas</span>`;
 } 
+else if(result){
+    result.insertAdjacentHTML('afterbegin', `<h2 class="text-center mb-4 text-white">Ok ${usuario} aqui está o jogo que mais se encaixa em seu perfil!</h2>`);
+}
+else if(result){
+    result.insertAdjacentHTML('afterbegin', '<h2 class="text-center mb-4 text-white">Ok Visitante aqui está o jogo que mais se encaixa em seu perfil!</h2>');
+}
 else {
-    perfilusername.innerHTML += `<h1>Visitante</h1>`; // Caso não encontre o cadastro
+    perfilusername.innerHTML += `<h1><i class="bi bi-person-circle"
+    style="font-size: 3rem; color: blue; margin-right: 5px;"></i>Visitante </h1>
+    <span style="font-size: 1rem; color: rgb(121, 121, 121);">Usuário há 2 meses | Há 1 listas criadas</span>`;
 }
